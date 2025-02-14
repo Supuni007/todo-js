@@ -20,4 +20,14 @@ sub.addEventListener("click", function(e) {
     listItem.appendChild(doneButton);
     listItem.appendChild(deleteButton);
     results.appendChild(listItem);
+
+    deleteButton.addEventListener("click", function() {
+        results.removeChild(listItem);
+    });
+
+    doneButton.addEventListener("click", function() {
+        const span = listItem.querySelector(".item");
+        span.style.color = "#ADFF2F";
+        span.style.textDecoration = "line-through";
+    });
 })
