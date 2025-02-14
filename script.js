@@ -30,4 +30,6 @@ sub.addEventListener("click", function(e) {
         span.style.color = "#ADFF2F";
         span.style.textDecoration = "line-through";
     });
+
+    txtTask.value = "";
 })
